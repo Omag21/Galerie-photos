@@ -1,0 +1,64 @@
+/* Design général */
+body {
+    margin: 2%;
+    border: 1px solid black;
+    background-color: #b3b3b3;
+}
+
+h2{
+    text-align: center;
+    
+}
+
+/* Conteneur principal pour l'image */
+#image {
+    position: relative;
+    width: 575px;
+    height: 450px;
+    border: 5px solid black;
+    margin: 25px auto;
+    background-color: #8e68ff;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Image principale */
+#mainImage {
+    display: none;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texte alternatif */
+#imageAltText {
+    display: none;
+    font-size: 1rem;
+    font-style: italic;
+    color: white;
+    
+    
+}
+
+/* Miniatures */
+.preview{
+    width: 30%;
+    margin-left: 10%;
+    border: 10px solid beige;
+    height: 250px;
+    margin-bottom: 40px;
+    
+}
+/* Effet hover */
+.preview:hover {
+    transform: scale(1.1);
+}
+#image img{
+    max-width: 100%; 
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+    margin-bottom: -15px;
+    object-fit: cover; /* Permet d'afficher l'image pointer sur la totalité du cadre */
+}
+
